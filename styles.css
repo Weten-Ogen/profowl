@@ -1,3 +1,4 @@
+/* General typography */
 *{
   margin: 0;
   box-sizing: border-box;
@@ -6,3 +7,44 @@ body{
   background-color: black;
   color: white;
 }
+
+/* Navbar typography and styling */
+/* the whole navBar */
+#navBar {
+  position: relative;
+  background-color: rgb(31, 30, 30);
+  height: 15vh;
+}
+/* h1 in the navBar  */
+#navBar > h1{
+  font-size: 25px;
+  color: gray;
+}
+/* ul in the navBar */
+#navBar ul {
+  position: absolute;
+  bottom: 0;
+  border: 2px solid green;
+  display : flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+  
+}
+/* li in the navBar */
+#navBar ul > li{
+  list-style: none;
+  
+  
+  
+  
+}
+/* a in the navBar */
+#navBar ul li > a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 22px;
+  color: gray;
+}
+
+
