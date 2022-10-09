@@ -53,5 +53,53 @@ body{
   border-bottom: 4px solid green;
   
 }
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<end of navBar */
 
+/*  the Main Page styling >>>>>. */
+.sec{
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(17, 17, 17);
+}
 
+/* the chat section for texting  */
+#chat{
+  padding-top: 10px;
+}
+/* the div with .person */
+#chat > .person{
+   display: flex;
+   justify-content: space-between;
+   padding: 8px;
+}
+
+/*the Image  or Profile pic */
+#chat .person  .personInfo> img{
+  width: 45px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* the personInfo styling */
+.personInfo{
+  display: flex;
+  margin: 3px;
+
+}
+
+/* the info- p  */
+.info-p{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.info-p .personName{
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: flex-start;
+  margin-bottom: 4px;
+}
+
+.info-p .last-msg{
+  justify-content: flex-end;
+}
