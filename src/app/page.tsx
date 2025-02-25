@@ -5,8 +5,8 @@ import SearchBar from "@/components/customs/searchbar";
 
 export default function Home() {
   return (
-   <div className=" ">
-      <div className="h-[60vh] overflow-hidden">
+   <div className="w-full ">
+      <div className="h-[60vh] md:h-[60vh]  overflow-hidden">
         <CarouselBg/>
         <SearchBar />  
       </div>

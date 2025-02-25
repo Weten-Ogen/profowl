@@ -11,8 +11,9 @@ interface searchprops {
 const SearchBar = (props:searchprops) => {
   return (
     <div className={cn('mt-20',props.className)}>
-      <div className='p-2 flex gap-8 px-8'>
+      <div className=' flex gap-4 px-4'>
         <Input
+            placeholder='enter a team or name of a player'
             className='w-full dark:bg-white dark:text-black'
             type="text"
         />

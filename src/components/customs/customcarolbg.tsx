@@ -29,7 +29,8 @@ export function CarouselBg() {
             <div className="w-full">
               <Card>
                 <CardContent 
-                className="w-full object-contain max-w-full items-center mt-12 justify-center h-[60vh] ">
+                className="w-full object-contain max-w-full items-center mt-12 justify-center h-[50vh] md:h-[60vh] relative p-0 m-0 ">
+                  <div className="absolute inset-0 h-full bg-black/65 w-full"/>
                     <Image
                         className=" w-full h-auto object-cover"
                         alt=""

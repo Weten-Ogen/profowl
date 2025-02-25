@@ -4,25 +4,12 @@ import React from 'react'
 import { Card, CardContent, CardDescription, CardTitle } from '../ui/card'
 import Image from 'next/image'
 import { Button } from '../ui/button'
+import ShowMorePlyerInfo from './showmoreplayer'
 
-interface palyerCardprops {
-    className?:string,
-    name:string,
-    position:string,
-    minutesPlayed:string,
-    club?:string,
-    nationality:string,
-    nationalityCap:string,
-    clubCap:string,
-    playerImage:string,
-    age:string,
-    playerDescription:string
-
-
-}
 const PlayerCard = (props:palyerCardprops) => {
+  
   return (
-    <div className={cn('',props.className)}>
+    <div className={cn('w-full',props.className)}>
       <div className='w-full max-w-full'>
         <Card>
             <CardContent className='w-full max-w-full'>
@@ -43,7 +30,9 @@ const PlayerCard = (props:palyerCardprops) => {
                     {props.playerDescription}
                 </CardDescription>
                 <div className='w-full flex gap-8 p-4 '>
-                    <Button>more info</Button>
+                    <ShowMorePlyerInfo
+                    details={...props}
+                    />
                     <Button>whatsapp</Button>
                 </div>
             </div>
